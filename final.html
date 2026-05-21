@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAM'S MOCHI - #MAKEEVERYTHINGHAPPY</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar" id="navbar">
+      <img src="logo.png" class="logo" alt="Sam's Mochi" onclick="window.location.href = '#home'" />
+
+      <!-- Desktop Links -->
+      <div class="nav-right">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">Tentang</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#location" class="nav-link">Lokasi</a>
+        <a href="#order" class="nav-link">CONTACT</a>
+      </div>
+
+      <!-- Hamburger Button -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="#home" class="nav-link" onclick="closeMenu()">Home</a>
+      <a href="#about" class="nav-link" onclick="closeMenu()">About</a>
+      <a href="#menu" class="nav-link" onclick="closeMenu()">Menu</a>
+      <a href="#location" class="nav-link" onclick="closeMenu()">Location</a>
+      <a href="#order" class="nav-link" onclick="closeMenu()">Contak</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>#MAKEEVERYTHINGHAPPY</h1>
+        <div class="buttons">
+          <a href="#order" class="btn primary">🛍 Pesan Mochi</a>
+          <a href="#about" class="btn secondary">📖 Pelajari Produk</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-flex">
+          <div class="about-image">
+            <div class="image-wrapper">
+              <img src="logo.png" alt="Logo Sam's Mochi" />
+              <div class="since-badge">Est. 2024</div>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <h3 class="owner-tag">Denasta Boni — Owner</h3>
+            <h2 class="about-title">Kebahagiaan dalam Setiap Gigitan Lembut</h2>
+            <p class="tagline">#MAKEEVERYTHINGHAPPY</p>
+            <p>Didirikan pada tahun <strong>2024</strong> oleh <strong>Denasta Boni</strong>, SAM'S MOCHI hadir untuk membawa keceriaan melalui mochi handmade premium.</p>
+            <div class="features">
+              <div class="feature-card">
+                <span class="icon">✨</span>
+                <h4>Premium</h4>
+                <p>Bahan Pilihan</p>
+              </div>
+              <div class="feature-card">
+                <span class="icon">🍓</span>
+                <h4>Segar</h4>
+                <p>Buah Pilihan</p>
+              </div>
+              <div class="feature-card">
+                <span class="icon">👩‍🍳</span>
+                <h4>Handmade</h4>
+                <p>Dibuat Ahli</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <div class="menu-header">
+          <h3 class="order-subtitle">Varian Rasa</h3>
+          <h2 class="order-title">Menu Kami</h2>
+          <p>Pilih kebahagiaanmu hari ini dengan varian mochi terbaik.</p>
+        </div>
+
+        <div class="menu-grid">
+          <div class="jenis-menu">
+            <h1>Ichigo Daifuku</h1>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-img-wrapper">
+              <img src="red bean.jpeg" alt="Red Bean Strawberry" />
+              <span class="price-tag">Rp 10k</span>
+            </div>
+            <div class="menu-detail">
+              <h4>Red Bean Strawberry</h4>
+              <p>Mochi kenyal dengan isian pasta kacang merah dan stroberi segar.</p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-img-wrapper">
+              <img src="choco.jpeg" alt="Choco Strawberry" />
+              <span class="price-tag">Rp 10k</span>
+              <span class="best-seller-tag">⭐ Best Seller</span>
+            </div>
+            <div class="menu-detail">
+              <h4>Choco Strawberry</h4>
+              <p>Cokelat melimpah dari kulit hingga isian yang lumer di mulut dan stroberi segar.</p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-img-wrapper">
+              <img src="matcha.jpeg" alt="Matcha Strawberry" />
+              <span class="price-tag">Rp 10k</span>
+            </div>
+            <div class="menu-detail">
+              <h4>Matcha Strawberry</h4>
+              <p>Sensasi teh hijau Jepang otentik dengan stroberi segar.</p>
+            </div>
+          </div>
+
+          <!-- Spacer agar grid tetap rapi di desktop (kolom ke-4 kosong) -->
+          <div class="menu-spacer" aria-hidden="true"></div>
+
+          <div class="jenis-menu">
+            <h1>Hokkaido</h1>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-img-wrapper">
+              <img src="cream straw.jpeg" alt="Cream Strawberry" />
+              <span class="price-tag">Rp 12k</span>
+            </div>
+            <div class="menu-detail">
+              <h4>Cream Strawberry</h4>
+              <p>Perpaduan krim yang lembut dan stroberi segar.</p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-img-wrapper">
+              <img src="cream cheese.jpeg" alt="Cream Cheese Strawberry" />
+              <span class="price-tag">Rp 12k</span>
+            </div>
+            <div class="menu-detail">
+              <h4>Cream Cheese Strawberry</h4>
+              <p>Krim keju mewah dan stroberi segar untuk teman bersantai.</p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-img-wrapper">
+              <img src="durian.jpeg" alt="Cream Durian" />
+              <span class="price-tag">Rp 12k</span>
+              <span class="best-seller-tag">⭐ Best Seller</span>
+            </div>
+            <div class="menu-detail">
+              <h4>Cream Durian</h4>
+              <p>Perpaduan krim lembut dan durian asli yang lumer di mulut.</p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-img-wrapper">
+              <img src="manggo.jpeg" alt="Cream Mango" />
+              <span class="price-tag">Rp 12k</span>
+            </div>
+            <div class="menu-detail">
+              <h4>Cream Mango</h4>
+              <p>Krim manis dengan sentuhan mangga segar yang sempurna.</p>
+            </div>
+          </div>
+
+          <div class="jenis-menu">
+            <h1>Special</h1>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-img-wrapper">
+              <img src="mochi bites.jpeg" alt="Mochi Bites" />
+              <span class="price-tag">Rp 20k</span>
+            </div>
+            <div class="menu-detail">
+              <h4>Mochi Bites</h4>
+              <p>Potongan mochi kenyal berukuran sekali gigit yang praktis untuk menemani waktu santai.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section id="location" class="location-section">
+      <div class="container">
+        <div class="location-header">
+          <h3 class="order-subtitle">Temukan Kami</h3>
+          <h2 class="order-title">Lokasi Toko</h2>
+          <p>Kunjungi langsung toko kami di Medan, Sumatera Utara.</p>
+        </div>
+
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.086527497429!2d98.65123217497306!3d3.567560396406621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312f002faa6821%3A0xf0b673927194b4b8!2sSam%E2%80%99s%20Mochi%20Usu!5e0!3m2!1sid!2sid!4v1779301334036!5m2!1sid!2sid"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Lokasi Sam's Mochi"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDER -->
+    <section id="order" class="order-section">
+      <div class="container">
+        <div class="order-header">
+          <h3 class="order-subtitle">Pesan Sekarang</h3>
+          <h2 class="order-title">Pilih Mochi Favoritmu</h2>
+          <p>Nikmati kelembutan mochi spesial dari Denasta Boni langsung di rumah Anda.</p>
+        </div>
+
+        <div class="order-container">
+          <div class="order-form">
+            <div class="input-group">
+              <label for="buyerName">Nama Lengkap</label>
+              <input type="text" id="buyerName" placeholder="Masukkan nama Anda" />
+            </div>
+            <div class="input-group">
+              <label for="mochiVariant">Varian Mochi</label>
+              <select id="mochiVariant">
+                <option value="" disabled selected>Pilih rasa favorit...</option>
+                <option value="Choco Strawberry">Choco Strawberry</option>
+                <option value="Red Bean Strawberry">Red Bean Strawberry</option>
+                <option value="Matcha Strawberry">Matcha Strawberry</option>
+                <option value="Cream Strawberry">Cream Strawberry</option>
+                <option value="Cream Cheese Strawberry">Cream Cheese Strawberry</option>
+                <option value="Cream Durian">Cream Durian</option>
+                <option value="Cream Mango">Cream Mango</option>
+                <option value="Mochi Bites">Mochi Bites</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="boxCount">Jumlah Box</label>
+              <input type="number" id="boxCount" min="1" placeholder="0" />
+            </div>
+            <div class="input-group">
+              <label for="deliveryAddress">Alamat Pengiriman</label>
+              <textarea id="deliveryAddress" rows="4" placeholder="Masukkan alamat lengkap pengiriman"></textarea>
+            </div>
+            <button type="button" onclick="sendToWhatsApp()" class="btn-submit">Kirim Pesanan via WhatsApp 💬</button>
+          </div>
+
+          <div class="order-info">
+            <div class="info-card">
+              <img src="logo.png" class="order-logo-small" alt="Sam's Mochi" />
+              <h4>SAM'S MOCHI Official</h4>
+              <p>Siap mengantarkan kebahagiaan ke seluruh penjuru kota.</p>
+            </div>
+            <div class="contact-details">
+              <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <p>Medan, Sumatera Utara, Indonesia</p>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon">📸</span>
+                <p>@sams.mochi</p>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">📞</span>
+                <p>+62 85941250998</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="lux-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo.png" alt="SAM'S MOCHI Logo" class="footer-brand-logo" />
+          <h1 class="footer-logo-text">SAM'S MOCHI</h1>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://instagram.com/sams.mochi" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/6285941250998" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <hr/>
+
+      <div class="footer-links">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#order">CONTACT</a>
+        <a href="#menu">MENU</a>
+        <a href="#location">LOCATION</a>
+        <a href="#">PRIVACY POLICY</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 SAM'S MOCHI</p>
+      </div>
+    </footer>
+
+    <script>
+      /* ---- Navbar scroll effect ---- */
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 590) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      /* ---- Active nav link on scroll ---- */
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+          if (window.scrollY >= section.offsetTop - 120) {
+            current = section.getAttribute("id");
+          }
+        });
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      /* ---- Hamburger / Mobile Menu ---- */
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      function openMenu() {
+        hamburger.classList.add("open");
+        mobileMenu.style.display = "flex";
+        // Trigger reflow for transition
+        requestAnimationFrame(() => mobileMenu.classList.add("open"));
+        document.body.style.overflow = "hidden";
+        hamburger.setAttribute("aria-expanded", "true");
+      }
+
+      function closeMenu() {
+        hamburger.classList.remove("open");
+        mobileMenu.classList.remove("open");
+        document.body.style.overflow = "";
+        hamburger.setAttribute("aria-expanded", "false");
+        // Hide after transition
+        setTimeout(() => {
+          if (!mobileMenu.classList.contains("open")) {
+            mobileMenu.style.display = "none";
+          }
+        }, 300);
+      }
+
+      hamburger.addEventListener("click", () => {
+        if (mobileMenu.classList.contains("open")) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      // Close menu when clicking outside
+      mobileMenu.addEventListener("click", (e) => {
+        if (e.target === mobileMenu) closeMenu();
+      });
+
+      /* ---- WhatsApp Order ---- */
+      function sendToWhatsApp() {
+        const name = document.getElementById("buyerName").value.trim();
+        const variant = document.getElementById("mochiVariant").value;
+        const count = document.getElementById("boxCount").value.trim();
+        const address = document.getElementById("deliveryAddress").value.trim();
+
+        if (!name || !variant || !count || !address) {
+          alert("Harap isi semua data pesanan!");
+          return;
+        }
+
+        const phoneNumber = "628123456789";
+        const message =
+          `Halo SAM'S MOCHI!%0A%0A` +
+          `Saya ingin memesan Mochi:%0A` +
+          `Nama: ${encodeURIComponent(name)}%0A` +
+          `Varian: ${encodeURIComponent(variant)}%0A` +
+          `Jumlah: ${encodeURIComponent(count)} Box%0A` +
+          `Alamat: ${encodeURIComponent(address)}%0A%0A` +
+          `%23MAKEEVERYTHINGHAPPY`;
+
+        window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+      }
+    </script>
+  </body>
+</html>
